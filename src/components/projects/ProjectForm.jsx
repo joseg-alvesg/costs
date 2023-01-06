@@ -24,6 +24,6 @@ export default function ProjectForm() {
       <div>
         <input type="submit" value="Criar projeto" />
       </div>
-    </form>
+    </form> //comentario
   )
 }
