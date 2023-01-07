@@ -1,7 +1,9 @@
 import Input from '../form/Input';
+import Select from '../form/Select';
+import SubmitButton from '../form/SubmitButton';
 import styles from './ProjectForm.module.css';
 
-export default function ProjectForm() {
+export default function ProjectForm({ btnText }) {
   return (
     <form className={ styles.form }>
       <Input 
@@ -16,14 +18,8 @@ export default function ProjectForm() {
         name="budget"
         placeholder="Insira o orçamento toral"
       />
-      <div>
-        <select name="category_id" id="">
-          <option disabled>Seleciona a categoria</option>
-        </select>
-      </div>
-      <div>
-        <input type="submit" value="Criar projeto" />
-      </div>
-    </form> //comentario
+      <Select name="category_id" text="Selecione a categoria" />
+      <SubmitButton text={ btnText } />
+    </form>
   )
 }
