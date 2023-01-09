@@ -6,22 +6,22 @@ import SubmitButton from '../form/SubmitButton';
 import styles from './ProjectForm.module.css';
 
 export default function ProjectForm({ btnText, handleSubmit, projectData }) {
-  const [categories, setcategories] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
     fetch("http://localhost:5000/categories", {
       method: "GET",
       headers: {
-        'Content-Type': 'application.json'
+        'Content-Type': 'application/json'
       },
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setcategories(data)
+        setCategories(data)
       })
       .catch((err) => console.log(err))
-  })
+  }, [])
 
   const submit = (e) => {
     e.preventDefault();

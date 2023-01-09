@@ -11,11 +11,12 @@ export default function NewProject() {
     project.cost = 0;
     project.services = [];
 
-    fetch("http://localhost:5000/categories", {
+    fetch("http://localhost:5000/projects", {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
+      body: JSON.stringify(project),
     }).then((resp) => resp.json())
       .then((data) => {
         console.log(data)
