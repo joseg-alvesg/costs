@@ -1,27 +1,6 @@
 {
   "projects": [
-    {
-      "name": "Evan Leblanc",
-      "budget": "24",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Joy Durham",
-      "budget": "69",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    }
+
   ],
   "categories": [
     {
