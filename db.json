@@ -1,6 +1,49 @@
 {
   "projects": [
-
+    {
+      "name": "Alec Vargas",
+      "budget": "77",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Elvis Haynes",
+      "budget": "13",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Jelani Sears",
+      "budget": "81",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Sloane Kidd",
+      "budget": "29",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    }
   ],
   "categories": [
     {
