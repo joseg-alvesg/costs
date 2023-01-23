@@ -7,7 +7,7 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 500,
+      "cost": 1500,
       "services": [
         {
           "name": "asdasd",
@@ -32,6 +32,12 @@
           "cost": "100",
           "description": "asdasd",
           "id": "58367444-3150-446f-8371-f1c59f0609aa"
+        },
+        {
+          "name": "asdasd",
+          "cost": "1000",
+          "description": "teste",
+          "id": "d5a43afe-ac81-4e46-927c-c2b64026008e"
         }
       ],
       "id": 1

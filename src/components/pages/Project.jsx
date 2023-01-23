@@ -9,11 +9,13 @@ import Container from '../layout/Container';
 import ProjectForm from '../projects/ProjectForm';
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm';
+import ServiceCard from '../service/ServiceCard';
 
 export default function Project() {
   const { id } = useParams();
 
   const [project, setProject] = useState([])
+  const [services, setServices] = useState([])
   const [showProjectForm, setShowProjectForm] = useState(false)
   const [showServiceForm, setShowServiceForm] = useState(false)
   const [message, setMessage] = useState()
@@ -30,6 +32,7 @@ export default function Project() {
       }).then((resp) => resp.json())
         .then((data) => {
           setProject(data)
+          setServices(data.services)
         })
         .catch((err) => console.log(err))
     }, 300)
@@ -67,15 +70,19 @@ export default function Project() {
     })
     .then((resp) => resp.json())
     .then((data) => {
-      // exibir os serviços
-      console.log(data);
+      setShowServiceForm(false)
     })
     .catch((err) => console.log(err))
+  }
+
+  function removeService() {
+
   }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm)
   }
+
   function toggleServiceForm() {
     setShowServiceForm(!showServiceForm)
   }
@@ -157,7 +164,19 @@ export default function Project() {
             </div>
             <h2>Serviços</h2>
             <Container customClass="start">
-              <p>Itens de serviçoes</p>
+              {services.length > 0 &&
+                services.map((service) => (
+                  <ServiceCard
+                    id={service.id}
+                    key={service.id}
+                    name={service.name}
+                    cost={service.cost}
+                    description={service.description}
+                    handleRemove={ removeService }
+                  />
+                ))
+              }
+              {services.length === 0 && <p>Não há serviçoes cadastrados.</p>}
             </Container>
           </Container>
         </div>
