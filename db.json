@@ -7,8 +7,33 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 500,
+      "services": [
+        {
+          "name": "asdasd",
+          "cost": "200",
+          "description": "asdasd",
+          "id": "5553ce86-48de-4da7-9b8c-4864a394ea61"
+        },
+        {
+          "name": "asdasd",
+          "cost": "100",
+          "description": "asdasd",
+          "id": "6d864e9c-42db-4d2f-bea7-164bb1a7ecac"
+        },
+        {
+          "name": "asdasd",
+          "cost": "100",
+          "description": "asdasd",
+          "id": "6d864e9c-42db-4d2f-bea7-164bb1a7ecac"
+        },
+        {
+          "name": "as",
+          "cost": "100",
+          "description": "asdasd",
+          "id": "58367444-3150-446f-8371-f1c59f0609aa"
+        }
+      ],
       "id": 1
     },
     {
