@@ -16,7 +16,7 @@ margin-bottom: 0.5em;
   font-weight: bold;
 }
 
-.details_container, service_form_containet {
+.details_container, .service_form_container {
   border-bottom: 1px solid #7a7a7a;
   margin-bottom: 1.2em;
   padding-bottom: 1.2em;
